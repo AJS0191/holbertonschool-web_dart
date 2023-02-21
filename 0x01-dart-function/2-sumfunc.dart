@@ -8,6 +8,5 @@ String showFunc(int a, int b) {
   return """
 Add $a + $b = ${add(a, b)}
 Sub $a - $b = ${sub(a, b)}
-
 """;
 }
