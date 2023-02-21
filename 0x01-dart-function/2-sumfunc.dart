@@ -6,7 +6,7 @@ int sub(int a, int b) {
 }
 String showFunc(int a, int b) {
   return """
-$a + $b = ${add(a, b)}
-$a - $b = ${sub(a, b)}
-""";
+Add $a + $b = ${add(a, b)}
+Sub $a - $b = ${sub(a, b)}
+\n""";
 }
