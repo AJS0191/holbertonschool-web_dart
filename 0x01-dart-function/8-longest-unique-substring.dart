@@ -3,9 +3,11 @@ String longestUniqueSubstring(String str) {
   String current = '';
 
   for (var i = 0; i < str.length; i++){
-    current = str.substring(i, i + 1);
-    if (current.length > longest.length && isUnique(current)) {
-      longest = current;
+    for (var j = i; j < str.length; j++){
+      current = str.substring(i, i + 1);
+      if (current.length > longest.length && isUnique(current)) {
+        longest = current;
+      }
     }
   }
   return longest;
