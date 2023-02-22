@@ -4,7 +4,7 @@ String longestUniqueSubstring(String str) {
 
   for (var i = 0; i < str.length; i++){
     for (var j = i; j < str.length; j++){
-      current = str.substring(i, i + 1);
+      current = str.substring(i, j + 1);
       if (current.length > longest.length && isUnique(current)) {
         longest = current;
       }
