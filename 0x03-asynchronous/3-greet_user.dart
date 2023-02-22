@@ -17,7 +17,7 @@ Future<String> fetchUserData() => Future.delayed(
 Future<String> greetUser() async {
   final String userData = await fetchUserData();
   final Map<String, dynamic> user = jsonDecode(userData);
-  return '3.14 Battery street';
+  return '3.14 Battery street\n';
 }
 
 Future<String> loginUser() async {
